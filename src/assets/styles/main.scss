@@ -26,6 +26,13 @@
 @import 'base/animation';
 
 //--------------------
+// LAYOUTS MODULES
+// partials with global scope
+//--------------------
+
+@import 'layouts/mainpage';
+
+//--------------------
 // COMPONENTS
 // partials with local scope to a component
 //--------------------

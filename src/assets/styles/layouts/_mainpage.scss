@@ -96,7 +96,7 @@
     margin-top: -145px;
     padding-top: 145px;
     padding-bottom: 147px;
-    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 84%);
+    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 
     &-container {
       &_title.container {
@@ -135,6 +135,83 @@
     &-text-block {
       width: 50%;
       padding-left: 2em;
+    }
+  }
+
+  &__cases {
+    padding-top: 145px;
+    padding-bottom: 147px;
+    clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
+
+    color: #F2E7DE;
+    background: #333;
+
+    margin-top: -148px;
+
+    &-container {
+      &_title.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2em;
+      }
+    }
+
+    &-list {
+      background: #434343;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      &-container.container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &-item {
+        display: block;
+        width: 33%;
+        border: 1px solid #333;
+        color: inherit;
+        text-decoration: none;
+        padding: 50px;
+        margin-right: 2em;
+
+        &:hover {
+          background: #333;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &-name {
+          margin-bottom: 2em;
+        }
+
+        &-image {
+          width: 65px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &-text-block {
+      width: 50%;
+      padding-left: 0;
+    }
+    &-line {
+      width: 50%;
+      border-bottom: 2px solid #F2E7DE;
+    }
+
+    &-btn {
+      display: inline-block;
+      margin-top: 2em;
+      background: #4d4d4d;
+
+      &:hover {
+        background: #666666;        ;
+      }
     }
   }
 }

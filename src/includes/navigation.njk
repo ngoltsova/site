@@ -17,6 +17,14 @@
 
     {# Nav Links  #}
     <ul class="nav__menu js-nav-menu" id="nav-menu">
+        <li class="nav__item">Обо мне</li>
+        <li class="nav__item">Методические кейсы</li>
+        <li class="nav__item">Мои достижения</li>
+        <li class="nav__item">Достижения в воспитании</li>
+        <li class="nav__item">Новости</li>
+        <li class="nav__item">Галерея</li>
+        <li class="nav__item">Обратная связь</li>
+    {#
     {%- for item in collections.all | eleventyNavigation -%}
         {%- if item.url -%}
             {%- set isCurrent = (item.url == page.url) -%}
@@ -32,6 +40,7 @@
             </li>
         {%- endif -%}
     {%- endfor -%}
+    #}
     </ul>
 
 </nav>

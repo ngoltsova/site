@@ -3,16 +3,38 @@ layout: mainpage
 eleventyNavigation:
   key: Home
 ---
-
+{% include "header.njk" %}
 <section class="mainpage__first">
-  <div class="container mainpage__flex">
-    <img src="/assets/images/photo.jpg" class="mainpage__photo" />
-    <div class="mainpage__text">
-      <h1 class="mainpage__caption">Наталья Гольцова</h1>
-      <blockquote class="mainpage__blockquote">
-        <p>&laquo;Смотрю на мир глазами детей и не перестаю ему удивляться&raquo;</p>
+  <div class="mainpage__bg"></div>
+  <div class="mainpage__container container">
+    <section class="mainpage__text-block">
+      <blockquote class="mainpage__quote">
+        <p class="mainpage__quote-p">&laquo;Смотрю на мир глазами детей и не перестаю ему удивляться&raquo;</p>
       </blockquote>
-      <p class="mainpage__paragraph">Сайт в разработке</p>
-    </div>
+      <h1 class="mainpage__title">Меня зовут Наталья&nbsp;Гольцова, и я воспитатель.</h1>
+    </section>
+    <section class="mainpage__video">
+      <p class="mainpage__video-text">Смотреть видео обо мне</p>
+      <img src="assets/images/play-btn.png" class="mainpage__video-btn" alt="play">
+    </section>
+  </div>
+</section>
+<section class="mainpage__about">
+  <div class="mainpage__about-container_title container">
+    <div class="mainpage__about-line"></div>
+    <section class="mainpage__about-text-block">
+      <h2 class="mainpage__subtitle">Обо мне</h2>
+    </section>
+  </div>
+  <div class="mainpage__about-container_content container">
+    <section class="mainpage__about-photo-block">
+      <img src="assets/images/photo.jpg" class="mainpage__about-photo-image" alt="фото">
+    </section>
+    <section class="mainpage__about-text-block">
+      <p class="mainpage__about-text">
+        Учитывая ключевые сценарии поведения, внедрение современных методик, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений. Также как реализация намеченных плановых заданий создаёт предпосылки для стандартных подходов. В своём стремлении улучшить пользовательский опыт мы упускаем, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы.
+      </p>
+      <a href="#" class="mainpage__about-btn mainpage__btn">Подробнее</a>
+    </section>
   </div>
 </section>

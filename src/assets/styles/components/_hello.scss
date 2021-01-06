@@ -21,5 +21,10 @@
     max-width: 70%;
 
     text-align: right;
+
+    @media screen and (max-width: 425px) {
+      display: inline;
+      max-width: 100%;
+    }
   }
 }

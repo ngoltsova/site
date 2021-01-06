@@ -1,10 +1,23 @@
 <header class="header" role="banner">
-    <div class="header__inner container">
-        <div class="header__left">
-            🎩 Eleventastic
+  <div class="container">
+    <div class="header__mobile">
+      <div class="header__toggler">
+        <p>
+        Меню
+        </p>
+        <div class="header__arrow">
+          <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.292236 10.3363L15.5436 0.292812L15.5436 20.3799L0.292236 10.3363Z" fill="#F2E7DE"/>
+          </svg>
         </div>
-        <div class="header__right">
-            {% include "navigation.njk" %}
-        </div>
+      </div>
+      <div class="header__menu _hidden">
+        {% include "blocks/nav.njk" %}
+      </div>
     </div>
+    <div class="header__desktop">
+      {% include "blocks/nav.njk" %}
+    </div>
+  </div>
 </header>
+

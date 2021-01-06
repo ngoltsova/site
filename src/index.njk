@@ -4,15 +4,13 @@ eleventyNavigation:
   key: Home
 ---
 
-<section class="mainpage__first">
-  <div class="container mainpage__flex">
-    <img src="/assets/images/photo.jpg" class="mainpage__photo" />
-    <div class="mainpage__text">
-      <h1 class="mainpage__caption">Наталья Гольцова</h1>
-      <blockquote class="mainpage__blockquote">
-        <p>&laquo;Смотрю на мир глазами детей и не перестаю ему удивляться&raquo;</p>
-      </blockquote>
-      <p class="mainpage__paragraph">Сайт в разработке</p>
-    </div>
-  </div>
-</section>
+{% include "header.njk" %}
+{% include "blocks/hello.njk" %}
+{% include "blocks/about.njk" %}
+{% include "blocks/personal.njk" %}
+{% include "blocks/cases.njk" %}
+{% include "blocks/achievs.njk" %}
+{# {% include "blocks/teaching.njk" %} #}
+{% include "blocks/news.njk" %}
+{% include "blocks/gallery.njk" %}
+{% include "blocks/contacts.njk" %}

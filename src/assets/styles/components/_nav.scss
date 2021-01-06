@@ -1,33 +1,24 @@
 .nav {
-    &__menu {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-    }
-    &__link {
-        display: block;
-        padding: 0.5em 1em;
-    }
-    &__toggle {
-        @include button-reset;
-    }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    @include mq-down(lg) {
-        &.is-open &__menu {
-            display: block;
-        }
-    }
+    &-item {
+      margin-right: 10px;
 
-    @include mq(lg) {
-        &__toggle {
-            display: none;
-        }
-        &__menu {
-            display: flex;
-            position: static;
-            background-color: transparent;
-        }
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

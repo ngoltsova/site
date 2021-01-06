@@ -1,0 +1,99 @@
+.section {
+  padding: 3em 0;
+  margin-top: -2em;
+
+  &_to-left {
+    clip-path: polygon(0 2em, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  &_to-right {
+    clip-path: polygon(0 0, 100% 2em, 100% 100%, 0% 100%);
+  }
+
+  &_light {
+    background: #F2E7DE;
+    color: #2A2A2A;
+
+    & a {
+      color: #2A2A2A;
+    }
+
+    & .btn {
+      background: #434343;
+      color: #F2E7DE;
+
+      &:hover {
+        background: #333333;
+      }
+    }
+  }
+  &_dark {
+    background: #333333;
+    color: #F2E7DE;
+
+    & a {
+      color: #F2E7DE;
+    }
+
+    & .btn {
+      background: #434343;
+      color: #F2E7DE;
+
+      &:hover {
+        background: #181818;
+      }
+    }
+  }
+  &_medium {
+    background: #434343;
+    color: #F2E7DE;
+
+    & a {
+      color: #F2E7DE;
+    }
+
+    & .btn {
+      background: #333333;
+      color: #F2E7DE;
+
+      &:hover {
+        background: #161616;
+      }
+    }
+  }
+  &_black {
+    background: #000000;
+    color: #F2E7DE;
+
+    & a {
+      color: #F2E7DE;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & p {
+    margin-bottom: 1em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  & .btn {
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em 0 2em;
+    padding: 5px 20px;
+
+    &._hidden {
+      display: none;
+    }
+  }
+}

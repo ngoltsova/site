@@ -1,9 +1,41 @@
 .header {
-    padding: $spacing-y 0;
+  padding: $spacing-y 0;
+  background: #333333;
+  color: #F2E7DE;
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__desktop {
+    @media screen and (max-width: 425px) {
+      display: none;
     }
+  }
+  &__mobile {
+    display: none;
+
+    @media screen and (max-width: 425px) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    & .nav__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__toggler {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__arrow {
+    margin-left: 10px;
+
+    &_rotated {
+      transform: rotate(-90deg);
+    }
+  }
 }

@@ -8,6 +8,7 @@ if (body.contains(about)) {
 
   aboutBtn.addEventListener('click', function () {
     personal.classList.toggle('_hidden');
+    aboutBtn.classList.toggle('_hidden');
   })
 }
 

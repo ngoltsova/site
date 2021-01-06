@@ -13,12 +13,6 @@ title: Воспитатель года 2020
 
 <div class="article__images">
 
-![](/assets/images/news/1/1.jpg)
-![](/assets/images/news/1/2.jpg)
-![](/assets/images/news/1/3.jpg)
-![](/assets/images/news/1/4.jpg)
-![](/assets/images/news/1/5.jpg)
-![](/assets/images/news/1/6.jpg)
-![](/assets/images/news/1/7.jpg)
+![](/assets/images/news/1/1.jpg)![](/assets/images/news/1/2.jpg)![](/assets/images/news/1/3.jpg)![](/assets/images/news/1/4.jpg)![](/assets/images/news/1/5.jpg)![](/assets/images/news/1/6.jpg)![](/assets/images/news/1/7.jpg)
 
 </div>

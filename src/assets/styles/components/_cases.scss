@@ -1,0 +1,52 @@
+.cases {
+  &__grid {
+    &-place {
+      padding: 2em 0;
+    }
+
+    &-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__item {
+    display: block;
+    padding: 20px;
+    border: 1px solid #333333;
+
+    text-align: center;
+
+    & svg {
+      margin-top: 2em;
+    }
+  }
+
+  &__name {
+    min-height: 100px;
+    text-align: left;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: none!important;
+
+      & .cases__item {
+        background: #333333;
+      }
+    }
+  }
+
+  & .caption {
+    margin-bottom: 1em;
+  }
+}

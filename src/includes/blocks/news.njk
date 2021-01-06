@@ -1,0 +1,14 @@
+<section class="section news" id="news">
+  <div class="container">
+    <h2 class="caption caption_h2">
+      Новости
+    </h2>
+    <ul reversed>
+      {%- for post in collections.posts -%}
+        <li>
+            <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>

@@ -11,6 +11,12 @@
 @import 'utils/mixins';
 
 //--------------------
+// VENDOR CSS
+//--------------------
+
+@import './vendor/swiper-bundle.scss';
+
+//--------------------
 // BASE MODULES
 // partials with global scope
 //--------------------
@@ -41,3 +47,4 @@
 @import 'components/nav';
 @import 'components/footer';
 @import 'components/icon';
+@import 'components/swiper';

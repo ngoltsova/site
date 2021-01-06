@@ -3,65 +3,13 @@ layout: mainpage
 eleventyNavigation:
   key: Home
 ---
+
 {% include "header.njk" %}
-<section class="mainpage__first">
-  <div class="mainpage__bg"></div>
-  <div class="mainpage__container container">
-    <section class="mainpage__text-block">
-      <blockquote class="mainpage__quote">
-        <p class="mainpage__quote-p">&laquo;Смотрю на мир глазами детей и не перестаю ему удивляться&raquo;</p>
-      </blockquote>
-      <h1 class="mainpage__title">Меня зовут Наталья&nbsp;Гольцова, и я воспитатель.</h1>
-    </section>
-    <section class="mainpage__video">
-      <p class="mainpage__video-text">Смотреть видео обо мне</p>
-      <img src="assets/images/play-btn.png" class="mainpage__video-btn" alt="play">
-    </section>
-  </div>
-</section>
-<section class="mainpage__about">
-  <div class="mainpage__about-container_title container">
-    <div class="mainpage__about-line"></div>
-    <section class="mainpage__about-text-block">
-      <h2 class="mainpage__subtitle">Обо мне</h2>
-    </section>
-  </div>
-  <div class="mainpage__about-container_content container">
-    <section class="mainpage__about-photo-block">
-      <img src="assets/images/photo.jpg" class="mainpage__about-photo-image" alt="фото">
-    </section>
-    <section class="mainpage__about-text-block">
-      <p class="mainpage__about-text">
-        Учитывая ключевые сценарии поведения, внедрение современных методик, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений. Также как реализация намеченных плановых заданий создаёт предпосылки для стандартных подходов. В своём стремлении улучшить пользовательский опыт мы упускаем, что представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы.
-      </p>
-      <a href="#" class="mainpage__about-btn mainpage__btn">Подробнее</a>
-    </section>
-  </div>
-</section>
-<section class="mainpage__cases">
-  <div class="mainpage__cases-container_title container">
-    <section class="mainpage__cases-text-block">
-      <h2 class="mainpage__subtitle">Методические кейсы</h2>
-    </section>
-    <div class="mainpage__cases-line"></div>
-  </div>
-  <section class="mainpage__cases-list">
-    <div class="mainpage__cases-list-container container">
-      <a href="#" class="mainpage__cases-list-item">
-        <h3 class="mainpage__cases-list-item-name">Название кейса</h3>
-        <img src="/assets/images/cases-item.png" class="mainpage__cases-list-item-image" alt="кейсы">
-      </a>
-      <a href="#" class="mainpage__cases-list-item">
-        <h3 class="mainpage__cases-list-item-name">Название кейса</h3>
-        <img src="/assets/images/cases-item.png" class="mainpage__cases-list-item-image" alt="кейсы">
-      </a>
-      <a href="#" class="mainpage__cases-list-item">
-        <h3 class="mainpage__cases-list-item-name">Название кейса</h3>
-        <img src="/assets/images/cases-item.png" class="mainpage__cases-list-item-image" alt="кейсы">
-      </a>
-    </div>
-  </section>
-  <div class="container">
-    <a href="#" class="mainpage__cases-btn mainpage__btn">Смотреть все</a>
-  </div>
-</section>
+{% include "blocks/about.njk" %}
+{% include "blocks/personal.njk" %}
+{% include "blocks/cases.njk" %}
+{% include "blocks/achievs.njk" %}
+{% include "blocks/teaching.njk" %}
+{% include "blocks/news.njk" %}
+{% include "blocks/gallery.njk" %}
+{% include "blocks/contacts.njk" %}
